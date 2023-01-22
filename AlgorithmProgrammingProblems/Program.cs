@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AlgorithmProgrammingProblems
 {
@@ -11,7 +7,7 @@ namespace AlgorithmProgrammingProblems
         static void Main(string[] args)
         {
             Console.WriteLine("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\nWelcome to Algorithm Problems\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
-            Console.WriteLine("1.Anagram.\n2.Binary Search.\n");
+            Console.WriteLine("1.Anagram.\n2.Binary Search.\n3. Bubble Sort.\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -22,6 +18,10 @@ namespace AlgorithmProgrammingProblems
                 case 2: //Binary Search 
                     BinarySearch binarySearch = new BinarySearch();
                     binarySearch.BinarySearchFn();
+                    break;
+                case 3: //Bubble Sort 
+                    BubbleSort bubbleSort = new BubbleSort();
+                    bubbleSort.BubbleSortFn();
                     break;
                 default:
                     Console.WriteLine("Invalid Option");
